@@ -1,0 +1,227 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz';
+*{
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;	
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1px;
+}
+.container {
+	margin: auto;
+	width: 90%;
+}
+
+/*---------------Style of header---------------*/
+.header {
+	height: 140px;		
+}
+
+.header .container {
+	display: block;	
+    text-align: center;
+	justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+.icon-whatsapp {
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+}
+.icon-language {
+    margin: 5px;
+}
+.logo, .icon-menu {
+	margin: 5px;
+	color: #fff;
+
+}
+.icon-menu {
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #fff;
+	color: #333;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+/*---------Estilos del menu---------*/
+.nav {
+	position: absolute;
+	top: auto;
+	left: -100%;
+	width: 100%;
+	transition: all 0.4s;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu__link {
+	display: block;
+	padding: 15px;
+	background: rgba(0,0,0,.7);
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu__link:hover, .select {
+	background: white;
+	color: rgba(4, 168, 255, 0.6);    
+}
+
+.show {
+	left: 0;
+}
+/*-----------tourAdventure-----------*/
+.tour__title {
+    text-align: center;
+    color: gold;
+}
+.container__tour {
+    padding: 10px;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    -webkit-perspective:700;
+}
+.tour__type {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.tour__type:hover{
+    transform: rotateY(180deg);
+}
+.side {
+    height: 100%;
+    width: 100%; 
+    backface-visibility: hidden;
+    position: absolute;
+}
+.front {
+    background: red;
+}
+.title__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    background:rgba(4, 168, 255, 0.6);
+    width: 100%;
+}
+.back {
+    background: gold;
+    transform: rotateY(180deg);
+    font-size: 10px;
+}
+
+/*----------------Estilos de footer----------------*/
+
+.footer {
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer .social [class^="icon-"] {
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 30px;
+}
+
+/*----------------Estilos responsive----------------*/
+@media(min-width:480px) {
+	.logo {
+		font-size: 40px;
+	}
+	.footer .social [class^="icon-"]{
+		margin: 0 10px;
+	}
+    .tour {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width:768px) {
+    .tour {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width:1024px) {
+	.container {
+		width: 1000px;
+	}
+	.nav {
+		position: static;
+		width: auto;        
+	}
+	.menu {
+		display: flex;
+        justify-content: flex-end;
+	}
+	.icon-menu {
+		display: none;
+	}
+	.menu__link {
+		background: none;
+		font-size: 20px;        
+	}
+	.select {
+		color: #fff;
+		background:rgb(72, 218, 168);
+	}
+    .tour__title {
+        margin: 50px;
+    }
+    .tour {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width:1280px) {
+	.container {
+		width: 1200px;
+	}
+	.logo {
+		font-size: 60px;
+	}
+    
+}
+
+

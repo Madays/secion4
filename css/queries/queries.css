@@ -1,0 +1,30 @@
+/*------------CELULARES-----*/
+@media screen and (max-width: 767px) {
+  body {
+    /*-------Header-----*/
+    /*-----End--Header-----*/
+    /*--------Footer---------*/
+    /*------End--Footer---------*/ } }
+/*------------TABLET-----*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    /*-------Header-----*/
+    /*-----End--Header-----*/
+    /*--------Footer---------*/
+    /*------End--Footer---------*/ } }
+/*------------DESKTOP-----*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    /*-------Header-----*/
+    /*-----End--Header-----*/
+    /*--------Footer---------*/
+    /*------End--Footer---------*/ } }
+/*------------DESKTOP LARGE-----*/
+@media screen and (min-width: 1200px) {
+  body {
+    /*-------Header-----*/
+    /*-----End--Header-----*/
+    /*--------Footer---------*/
+    /*------End--Footer---------*/ } }
+
+/*# sourceMappingURL=queries.css.map */

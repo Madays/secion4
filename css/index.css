@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*outline: 1px solid purple;*/ }
+
+/*--------section.hero--------*/
+html body {
+  background-color: #ddd; }
+  html body section.hero {
+    position: relative; }
+    html body section.hero video {
+      width: 100%;
+      height: auto;
+      position: relative; }
+    html body section.hero .header {
+      position: absolute;
+      width: 100%;
+      top: 0; }
+    html body section.hero header {
+      position: fixed;
+      right: 0;
+      color: #fff;
+      padding-right: 20px; }
+    html body section.hero h1 {
+      position: absolute;
+      top: 50%;
+      color: #fff;
+      width: 100%; }
+  html body section.about-me * {
+    /*outline: solid 1px purple;*/ }
+  html body section.about-me {
+    background: #1DBDB5;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left #1DBDB5, #36B8E9 100%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right #1DBDB5, #36B8E9 100%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right #1DBDB5, #36B8E9 100%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #1DBDB5, #36B8E9 100%);
+    /* Standard syntax */ }
+    html body section.about-me ul {
+      list-style: none;
+      color: #fff;
+      text-align: center; }
+      html body section.about-me ul li {
+        text-align: center;
+        cursor: pointer;
+        padding: 0px 15px;
+        display: inline-block; }
+        html body section.about-me ul li h4 {
+          width: 200px;
+          height: 200px;
+          line-height: 200px;
+          border-radius: 50%;
+          box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+          display: inline-block;
+          text-align: center;
+          margin: auto;
+          position: relative; }
+          html body section.about-me ul li h4 img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            position: absolute; }
+          html body section.about-me ul li h4 span#title-item-list {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0;
+            height: auto;
+            line-height: normal;
+            display: block;
+            width: 100%; }
+        html body section.about-me ul li p {
+          font-size: 48px; }
+
+/*-----End---section.hero--------*/
+
+/*# sourceMappingURL=index.css.map */
